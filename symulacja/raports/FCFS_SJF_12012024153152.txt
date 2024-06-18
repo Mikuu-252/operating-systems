@@ -1,0 +1,45 @@
+--- Fri Jan 12 15:31:52 2024 ---
+For data:
+P1: ArrivalTime: 0, ProcessTime:27, Priority:6.
+P2: ArrivalTime: 0, ProcessTime:22, Priority:4.
+P3: ArrivalTime: 1, ProcessTime:3, Priority:9.
+P4: ArrivalTime: 1, ProcessTime:12, Priority:3.
+P5: ArrivalTime: 1, ProcessTime:25, Priority:3.
+P6: ArrivalTime: 1, ProcessTime:21, Priority:8.
+P7: ArrivalTime: 2, ProcessTime:13, Priority:8.
+P8: ArrivalTime: 3, ProcessTime:23, Priority:5.
+P9: ArrivalTime: 4, ProcessTime:17, Priority:1.
+P10: ArrivalTime: 4, ProcessTime:19, Priority:0.
+P11: ArrivalTime: 4, ProcessTime:27, Priority:1.
+P12: ArrivalTime: 4, ProcessTime:11, Priority:7.
+P13: ArrivalTime: 5, ProcessTime:18, Priority:4.
+P14: ArrivalTime: 6, ProcessTime:3, Priority:4.
+P15: ArrivalTime: 6, ProcessTime:14, Priority:1.
+
+
+FCFS:
+Avarage waiting time: 124.73333333333333
+┌─────┐ ┌─────┐ ┌─────┐ ┌─────┐ ┌─────┐ ┌─────┐ ┌─────┐ ┌─────┐ ┌─────┐ ┌─────┐ ┌─────┐ ┌─────┐ ┌─────┐ ┌─────┐ ┌─────┐
+│     │ │     │ │     │ │     │ │     │ │     │ │     │ │     │ │     │ │     │ │     │ │     │ │     │ │     │ │     │
+│ P1  │ │ P2  │ │ P3  │ │ P4  │ │ P5  │ │ P6  │ │ P7  │ │ P8  │ │ P9  │ │ P10 │ │ P11 │ │ P12 │ │ P13 │ │ P14 │ │ P15 │
+│     │ │     │ │     │ │     │ │     │ │     │ │     │ │     │ │     │ │     │ │     │ │     │ │     │ │     │ │     │
+└─────┘ └─────┘ └─────┘ └─────┘ └─────┘ └─────┘ └─────┘ └─────┘ └─────┘ └─────┘ └─────┘ └─────┘ └─────┘ └─────┘ └─────┘
+0       27      49      52      64      89      110     123     146     163     182     209     220     238     241     255    
+
+SJF:
+Avarage waiting time: 90.86666666666666
+┌─────┐ ┌─────┐ ┌─────┐ ┌─────┐ ┌─────┐ ┌─────┐ ┌─────┐ ┌─────┐ ┌─────┐ ┌─────┐ ┌─────┐ ┌─────┐ ┌─────┐ ┌─────┐ ┌─────┐
+│     │ │     │ │     │ │     │ │     │ │     │ │     │ │     │ │     │ │     │ │     │ │     │ │     │ │     │ │     │
+│ P2  │ │ P3  │ │ P14 │ │ P12 │ │ P4  │ │ P7  │ │ P15 │ │ P9  │ │ P13 │ │ P10 │ │ P6  │ │ P8  │ │ P5  │ │ P1  │ │ P11 │
+│     │ │     │ │     │ │     │ │     │ │     │ │     │ │     │ │     │ │     │ │     │ │     │ │     │ │     │ │     │
+└─────┘ └─────┘ └─────┘ └─────┘ └─────┘ └─────┘ └─────┘ └─────┘ └─────┘ └─────┘ └─────┘ └─────┘ └─────┘ └─────┘ └─────┘
+0       22      25      28      39      51      64      78      95      113     132     153     176     201     228     255    
+
+SJF WITH PRIORITY:
+Avarage waiting time: 120.6
+┌─────┐ ┌─────┐ ┌─────┐ ┌─────┐ ┌─────┐ ┌─────┐ ┌─────┐ ┌─────┐ ┌─────┐ ┌─────┐ ┌─────┐ ┌─────┐ ┌─────┐ ┌─────┐ ┌─────┐
+│     │ │     │ │     │ │     │ │     │ │     │ │     │ │     │ │     │ │     │ │     │ │     │ │     │ │     │ │     │
+│ P2  │ │ P15 │ │ P10 │ │ P9  │ │ P11 │ │ P14 │ │ P13 │ │ P4  │ │ P8  │ │ P5  │ │ P12 │ │ P7  │ │ P1  │ │ P6  │ │ P3  │
+│     │ │     │ │     │ │     │ │     │ │     │ │     │ │     │ │     │ │     │ │     │ │     │ │     │ │     │ │     │
+└─────┘ └─────┘ └─────┘ └─────┘ └─────┘ └─────┘ └─────┘ └─────┘ └─────┘ └─────┘ └─────┘ └─────┘ └─────┘ └─────┘ └─────┘
+0       22      36      55      72      99      102     120     132     155     180     191     204     231     252     255    
